@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.massegeContainer{
+border: 1px solid $primary_color_dark; 
+width: 200px;
+height: max-content;
+color: $primary_color_error;
+ box-shadow: 1px 1px 5px 2px $primary_color_error;
+ background-color: rgba(0,0,0,0.4); 
+padding: 10px;
+position:fixed;
+z-index: 1000;
+bottom:350px;
+right: 1%;
+
+   transition: opacity 0.5s ease, transform 0.5s ease;
+}

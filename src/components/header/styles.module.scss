@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.headerContainer,
+.navContainer  {
+    width: 100%;
+ 
+  background-color: $primary_back_header;
+  color: $primary_color_light;
+  @include flexbox(row, space-around, center);
+  padding: 43px 0;
+
+}
+.headerContainer {
+  h3 {
+    font-weight: 900;
+    font-size: 20px;
+@media (max-width:460px) {
+  display: none;
+  }
+  }
+  
+}

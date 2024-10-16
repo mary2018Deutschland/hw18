@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.all,
+.masmediaImage,
+.inputContainer {
+  @include flexbox();
+  flex-wrap: wrap;
+}
+.all {
+  gap: 20px;
+  justify-content: space-between;
+}
+.inputContainer {
+  margin: 20px 0;
+  gap: 10px;
+}
+.contactsSend {
+  p {
+    padding: 5px;
+  }
+  .btn {
+    padding-top: 20px;
+    text-align: center;
+    button {
+      padding: 10px;
+      border-radius: 8px;
+      background-color: $primary_back_footer;
+      color: $primary_color_light;
+    }
+  }
+}
+.masmedia {
+  p {
+    text-align: center;
+  }
+  .masmediaImage {
+    padding: 20px 0;
+    gap: 10px;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}

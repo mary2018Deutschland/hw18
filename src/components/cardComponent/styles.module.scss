@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.cardContainer {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  padding: 30px;
+  img{
+  max-width: 100%;
+  }
+  div{
+  max-width: 30%;}
+  span {
+    margin-right: 10%;
+    font-weight: 700;
+  }
+  button {
+    min-width: 30px;
+    height: 30px;
+    color: $primary_color_light;
+    background-color: $primary_color_dark;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+  .priceAndBtn{
+  display: flex;
+  gap :10px
+  }
+}
+@media (max-width: 1000px) {
+  .cardContainer {
+    flex-direction: column;
+    // justify-content: start ;
+    // align-items: start !important;
+   div {
+    max-width: min-content;
+    border-left: none !important;
+  }
+}
+}

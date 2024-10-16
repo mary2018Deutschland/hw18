@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.listContainer{
+  @include flexbox(row, space-between);
+  gap: 20px;
+  flex-wrap: wrap;
+  .totalPriceContainer {
+    position:absolute;
+    left: 75%;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    @media (max-width:1400px) {
+      position: static;
+    }
+    h3{
+    border: none;}
+    p {
+      opacity: 0.5;
+    }
+    .names{
+      border-bottom: 1px solid rgb(0, 0, 0) ;
+      padding-bottom: 10%;
+    }
+    .sum {
+      padding-top: 10%;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.navContainer {
+    // justify-content: space-between
+  @include flexbox(row, space-between, center);
+  max-width: 40%;
+  gap:64px;
+  @media (max-width:680px) {
+    gap:10px;
+    flex-wrap: wrap;
+
+  }
+  @media (max-width:460px) {
+  max-width:  100%;
+  gap:43px;
+  }
+    
+}
